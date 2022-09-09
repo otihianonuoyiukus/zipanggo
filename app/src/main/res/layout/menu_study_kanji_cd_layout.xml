@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:id="@+id/menu_study_kanji_ll_rl_system"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RadioGroup
+            android:id="@+id/menu_study_kanji_rl_rg_jlptgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/menu_study_kanji_cd_rb_n5">
+
+            <RadioButton
+                android:id="@+id/menu_study_kanji_cd_rb_n5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darker_red"
+                android:text="@string/menu_study_cd_choice_level_kanji_n5" />
+
+            <RadioButton
+                android:id="@+id/menu_study_kanji_cd_rb_n4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darker_red"
+                android:text="@string/menu_study_cd_choice_level_kanji_n4" />
+
+            <RadioButton
+                android:id="@+id/menu_study_kanji_cd_rb_n3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darker_red"
+                android:text="@string/menu_study_cd_choice_level_kanji_n3" />
+
+            <RadioButton
+                android:id="@+id/menu_study_kanji_cd_rb_n2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darker_red"
+                android:text="@string/menu_study_cd_choice_level_kanji_n2" />
+
+            <RadioButton
+                android:id="@+id/menu_study_kanji_cd_rb_n1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darker_red"
+                android:text="@string/menu_study_cd_choice_level_kanji_n1" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</LinearLayout>

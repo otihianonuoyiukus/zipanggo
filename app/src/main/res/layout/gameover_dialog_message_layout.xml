@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        app:dividerColor="@color/darker_red"
+        app:dividerThickness="1dp" />
+
+    <TextView
+        android:id="@+id/gameover_dialog_rl_tv_messageheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/game_gameover_header"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!--    <com.google.android.material.imageview.ShapeableImageView-->
+    <!--        android:layout_width="170dp"-->
+    <!--        android:layout_height="170dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="-20dp"-->
+    <!--        android:layout_below="@id/gameover_dialog_rl_tv_messagebody"-->
+    <!--        android:background="@drawable/ic_game_gameover_dialog_medal"-->
+    <!--        />-->
+
+    <TextView
+        android:id="@+id/gameover_dialog_rl_tv_messagebody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameover_dialog_rl_tv_messageheader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="@string/game_gameover_message"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gameover_dialog_rl_tv_finalscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameover_dialog_rl_tv_messagebody"
+        android:layout_centerHorizontal="true"
+        android:includeFontPadding="false"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="5"
+        android:text="@string/number_placeholder"
+        android:textColor="@color/correct_green"
+        android:textSize="80sp" />
+
+
+    <LinearLayout
+        android:id="@+id/gameover_dialog_rl_ll_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameover_dialog_rl_tv_finalscore"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/gameover_dialog_ll_tv_messagebest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_gameover_personalscore"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/gameover_dialog_ll_tv_scorebest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="-1"
+            android:shadowDy="-1"
+            android:shadowRadius="1"
+            android:text="@string/number_placeholder"
+            android:textColor="#FFC300" />
+
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameover_dialog_rl_ll_linear"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        app:dividerColor="@color/darker_red"
+        app:dividerThickness="1dp" />
+
+</RelativeLayout>

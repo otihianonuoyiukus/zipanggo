@@ -1,0 +1,428 @@
+<resources>
+    <string name="app_name">Zipanggo</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_quiz">QuizActivity</string>
+
+    <!--    Placeholders: Strings-->
+    <string name="character_placeholder">あ</string>
+    <string name="transliteration_placeholder">a</string>
+    <string name="transliteration_placeholder1">ma</string>
+    <string name="stroke_count_placeholder">1</string>
+    <string name="mnemonic_text_placeholder">ahas</string>
+    <string name="lorem_ipsum_placeholder">Lorem Ipsum</string>
+    <string name="number_placeholder">00</string>
+    <string name="hiragana_word_placeholder">いっしょ</string>
+    <string name="kanji_word_placeholder">_緒</string>
+    <string name="kanji_meaning_placeholder">kasama ang lahat</string>
+
+    <string name="hiragana_reference_header">Hiragana Syllables</string>
+    <string name="hiragana_quiz_header">Hiragana Quiz</string>
+    <string name="gojuuon_header">Gojūon 【五十音】</string>
+    <string name="voiced_header">Voiced</string>
+    <string name="stroke_count">Strokes:</string>
+    <string name="mnemonic_header">Mnemonic</string>
+    <string name="drawing_practice_header">Drawing Practice</string>
+    <string name="quiz_input_hint">Answer</string>
+
+    <!--    Choice Dialog: Button Strings-->
+    <string name="choice_confirm_text">CONFIRM</string>
+    <string name="choice_cancel_text">CANCEL</string>
+    <string name="choice_create_text">CREATE</string>
+    <string name="choice_take_text">TAKE QUIZ</string>
+
+    <!--    Account Menu: Strings-->
+    <string name="menu_account_header">Account</string>
+    <string name="menu_account_newaccount">+ Create a new account</string>
+    <string name="menu_account_create_name_label">Account Name</string>
+    <string name="menu_account_create_pass_label">Password</string>
+    <string name="menu_account_desc_1">You are using this account</string>
+    <string name="menu_account_desc_2">Use this account</string>
+    <string name="account_popup_menu_choose">Choose</string>
+    <string name="account_popup_menu_delete">Delete</string>
+
+    <!--    Menu: Study Section-->
+    <string name="menu_study_button_gettingstarted_header">Getting Started</string>
+    <string name="menu_study_button_gettingstarted_desc">A guide for the beginners of Zipanggo</string>
+    <string name="menu_study_button_referencesheet_header">Reference Sheet</string>
+    <string name="menu_study_button_referencesheet_desc">Reference sheet for Japanese characters</string>
+    <string name="menu_study_button_kanjidictionary_header">Kanji Dictionary</string>
+    <string name="menu_study_button_kanjidictionary_desc">Dictionary for Chinese characters</string>
+    <string name="menu_study_button_bookmark_header">Kanji Bookmark</string>
+    <string name="menu_study_button_bookmark_desc">List of bookmark/s for Chinese characters</string>
+    <string name="menu_study_button_flashcard_header">Flashcards</string>
+    <string name="menu_study_button_flashcard_desc">Customizable flashcards set for Japanese characters</string>
+    <string name="menu_study_button_quiz_header">Quizzes</string>
+    <string name="menu_study_button_quiz_desc">Customizable quiz session for Japanese characters</string>
+    <string name="menu_study_button_lesson_header">Lessons</string>
+    <string name="menu_study_button_lesson_desc">Topics all about the Japanese language</string>
+    <string name="menu_study_button_readingexercise_header">Reading Exercises</string>
+    <string name="menu_study_button_readingexercise_desc">Japanese literature for some reading exercises</string>
+
+    <!--    Menu: Choice Dialog Strings-->
+    <string name="menu_study_cd_choice_referencesheet_header">Choose a Reference Sheet</string>
+    <string name="menu_study_cd_choice_flashcard_header">Create a Flashcard Set</string>
+    <string name="menu_study_cd_choice_quiz_header">Create a Quiz Session</string>
+    <string name="menu_study_cd_choice_system_hiragana">Hiragana</string>
+    <string name="menu_study_cd_choice_system_katakana">Katakana</string>
+    <string name="menu_study_cd_choice_system_kanji">Kanji</string>
+    <string name="menu_study_cd_choice_sound_basic">Gojuuon</string>
+    <string name="menu_study_cd_choice_sound_voiced_dakuon">Dakuon</string>
+    <string name="menu_study_cd_choice_sound_voiced_handakuon">Handakuon</string>
+    <string name="menu_study_cd_choice_sound_combo">Youon</string>
+    <string name="menu_study_cd_choice_level_kanji_n5">N5</string>
+    <string name="menu_study_cd_choice_level_kanji_n4">N4</string>
+    <string name="menu_study_cd_choice_level_kanji_n3">N3</string>
+    <string name="menu_study_cd_choice_level_kanji_n2">N2</string>
+    <string name="menu_study_cd_choice_level_kanji_n1">N1</string>
+
+    <!--    Menu: Game Section-->
+    <string name="menu_game_button_romakanaspeed_header">Roma2Kana Speed</string>
+    <string name="menu_game_button_romakanaspeed_desc">Match the romaji to its hiragana counterpart</string>
+    <string name="menu_game_button_romakanamatch_header">Roma2Kana Match</string>
+    <string name="menu_game_button_romakanamatch_desc">Match all the matching pair of cards</string>
+    <string name="menu_game_button_missingkanji_header">Missing Kanji</string>
+    <string name="menu_game_button_missingkanji_desc">Find the missing kanji character in a word</string>
+
+    <!--    Menu: Statistics Section-->
+    <string name="menu_statistic_button_quizreport_header">Quiz Reports</string>
+    <string name="menu_statistic_button_quizreport_desc">Look at your previously taken quiz results</string>
+    <string name="menu_statistic_button_achievement_header">Achievements</string>
+    <string name="menu_statistic_button_achievement_desc">Look at your accomplished milestones</string>
+    <string name="menu_statistic_button_gamescore_header">Game Scores</string>
+    <string name="menu_statistic_button_gamescore_desc">Look at your scores from the games</string>
+
+    <!--    Kanji Dictionary: Kanji Category Header-->
+    <string-array name="kanjidictionary_n5_category">
+        <item>Numbers/Numbers in Japanese</item>
+        <item>2/2</item>
+        <item>3/3</item>
+        <item>4/4</item>
+    </string-array>
+
+    <!--    Kanji Dictionary: Menu Strings-->
+    <string name="kanji_button_kanji_placeholder">人</string>
+    <string name="kanji_button_meaning_placeholder">tao; isang tao; mga tao</string>
+    <string name="kanji_button_onyomi_placeholder">On: ジン、 ニン</string>
+    <string name="kanji_button_kunyomi_placeholder">Kun: ひと、 -り、 -と</string>
+
+    <!--    Kanji Dictionary: Kanji Card Strings-->
+    <string name="kanji_card_jlptlevel_n5">JLPT N5</string>
+    <string name="kanji_card_jlptlevel_n4">JLPT N4</string>
+    <string name="kanji_card_jlptlevel_n3">JLPT N3</string>
+    <string name="kanji_card_jlptlevel_n2">JLPT N2</string>
+    <string name="kanji_card_jlptlevel_n1">JLPT N1</string>
+
+    <!--    Kanji Dictionary: Kanji Card (Back) Strings-->
+    <string name="kanji_card_back_kunyomi">Kun:\u0020</string>
+    <string name="kanji_card_back_onyomi">On:\u0020</string>
+    <string name="kanji_card_back_meaning">Meaning:\u0020</string>
+    <string name="kanji_card_back_radical">Radical/s:\u0020</string>
+    <string name="kanji_card_back_part">Part/s:\u0020</string>
+    <string name="kanji_card_back_variant">Variant/s:\u0020</string>
+
+    <!--    Lesson Activity-->
+    <string name="menu_lesson_title_0">Japanese Internet</string>
+
+    <!--    Lesson: Japanese Internet Topic Header-->
+    <string-array name="lesson_japanese_internet">
+        <item>Emoji is Japanese?!?!?/The truth behind the false cognate between "emoji" and "emotion"</item>
+        <item>2/2</item>
+        <item>3/3</item>
+        <item>4/4</item>
+    </string-array>
+
+    <!--    Reading Exercise Activity-->
+    <string name="menu_readingexercise_title_0">Momotaro</string>
+
+    <string name="readingexercise_momotaro">
+        <![CDATA[
+            <h1>Part 1: Momotaro</h1>
+            <center><img src=\'img_readingexercise_momotaro.png\'/></center>
+            <p>
+                <b>&emsp;(Japanese):</b>
+                <br/>
+                むかし、 むかし、 ある ところ <strong>に</strong>
+                <br/>
+                おじいさん <strong>と</strong> おばあさん<strong> が</strong> いました。
+                <br/>
+                <b>&emsp;(Romaji):</b>
+                <br/>
+                <i>Mukashi, mukashi, aru tokoro <strong>ni</strong></i>
+                <br/>
+                <i>ojiisan <strong>to</strong> obaasan <strong>ga</strong> imashita.</i>
+                <br/>
+                <b>&emsp;(English):</b>
+                <br/>
+                Long, long ago, in some place…
+                <br/>
+                There was an old man and an old woman.
+                <br/>
+                <b>&emsp;(Filipino):</b>
+                <br/>
+                Isang araw, sa malayong lugar…
+                <br/>
+                Mayroong isang matandang lalake at isang matandang babae.
+            </p>
+            <p>
+                <b>&emsp;(Japanese):</b>
+                <br/>
+                おじいさん <strong>が</strong> やま <strong>へ</strong> き を きり <strong>に</strong> いけば、
+                <br/>
+                おばあさん <strong>は</strong> かわ <strong>へ</strong> せんたく <strong>に</strong> でかけます。
+                <br/>
+                <b>&emsp;(Romaji):</b>
+                <br/>
+                <i>Ojiisan <strong>ga</strong> yama <strong>e</strong> ki <strong>o</strong> kiri <strong>ni</strong> ikeba,</i>
+                <br/>
+                <i>obaasan <strong>wa</strong> kawa <strong>e</strong> sentaku <strong>ni</strong> dekakemasu.</i>
+                <br/>
+                <b>&emsp;(English):</b>
+                <br/>
+                When the old man went to the mountain to cut trees,
+                <br/>
+                the old woman went out to the river to wash clothes.
+                <br/>
+                <b>&emsp;(Filipino):</b>
+                <br/>
+                Nang pumunta ang matandang lalake sa bundok upang magputol ng mga puno,
+                <br/>
+                ang matandang babae naman ay lumabas papunta sa ilog upang maglaba ng mga damit.
+            </p>
+            <p>
+            <br/>
+                <b>&emsp;(Japanese):</b>
+                <br/>
+                「おじいさん、 はよう もどってきなされ。」
+                <br/>
+                <b>&emsp;(Romaji):</b>
+                <br/>
+                <i>“Ojiisan, hayou modotte kinasare.“</i>
+                <br/>
+                <b>&emsp;(English):</b>
+                <br/>
+                “Old man, come back quickly.”
+                <br/>
+                <b>&emsp;(Filipino):</b>
+                <br/>
+                ”Matanda, bumalik ka kaagad.” Sabi ng matandang babae.
+            </p>
+            <p>
+                <b>&emsp;(Japanese):</b>
+                <br/>
+                「おばあさん <strong>も</strong> き <strong>を</strong> つけて な。」
+                <br/>
+                <b>&emsp;(Romaji):</b>
+                <br/>
+                <i>“Obaasan <strong>mo</strong> ki <strong>o</strong> tsukete na.”</i>
+                <br/>
+                <b>&emsp;(English):</b>
+                <br/>
+                “Old woman, you also be careful please.”
+                <br/>
+                <b>&emsp;(Filipino):</b>
+                <br/>
+                “Matanda, mag-ingat ka rin.” Sabi ng matandang lalake.
+            </p>
+            <p>
+                <b>&emsp;(Japanese):</b>
+                <br/>
+                まいにち やさしく いい あって でかけます。
+                <br/>
+                <b>&emsp;(Romaji):</b>
+                <br/>
+                <i>Mainichi yasashiku ii atte dekakemasu.</i>
+                <br/>
+                <b>&emsp;(English):</b>
+                <br/>
+                Each day they gently say that to each other and go out.
+                <br/>
+                <b>&emsp;(Filipino):</b>
+                <br/>
+                Araw-araw ay malumanay nilang sinasabi iyon sa isa\'t isa habang lumalabas.
+            </p>
+        ]]>
+    </string>
+
+    <!--    Missing Kanji: Menu-->
+    <string name="missingkanji_difficulty_easy">Easy</string>
+    <string name="missingkanji_difficulty_medium">Medium</string>
+    <string name="missingkanji_difficulty_hard">Hard</string>
+
+    <!--    Missing Kanji: Easy Words-->
+    <string-array name="missingkanji_easy_words">
+        <item>noong nakaraang taon,this year,きょねん,去_,年</item>
+        <item>ika-pitong araw ng buwan,7th day of the month,なのか,_日,七</item>
+        <item>ngayong linggo,this week,こんしゅう,_週,今</item>
+        <item>sarili; sarili ko,self; myself,じぶん,_分,自</item>
+        <item>pasukan,entrance,いりぐち,_口,入</item>
+        <item>miyerkules,wednesday,すいようび,水曜_,日</item>
+        <item>ika-siyam na araw ng buwan,ninth day of the month,ここのか,_日,九</item>
+        <item>hindi magaling; hindi marunong,poor; unskillful,へた,_手,下</item>
+        <item>isang tao; mag-isa,one person; alone,ひとり,_人,一</item>
+        <item>ngayon; sa kasalukuyan,today; nowadays,きょう,今_,日</item>
+    </string-array>
+
+    <!--    Missing Kanji: Random Kanji-->
+    <string-array name="missingkanji_randomkanji">
+        <item>日</item>
+        <item>一</item>
+        <item>人</item>
+        <item>年</item>
+        <item>大</item>
+        <item>十</item>
+        <item>二</item>
+        <item>本</item>
+        <item>中</item>
+        <item>出</item>
+        <item>三</item>
+        <item>見</item>
+        <item>月</item>
+        <item>生</item>
+        <item>五</item>
+        <item>上</item>
+        <item>力</item>
+        <item>四</item>
+        <item>金</item>
+        <item>九</item>
+        <item>国</item>
+        <item>会</item>
+        <item>同</item>
+        <item>長</item>
+        <item>自</item>
+        <item>時</item>
+        <item>行</item>
+        <item>社</item>
+        <item>内</item>
+        <item>分</item>
+        <item>後</item>
+        <item>前</item>
+        <item>地</item>
+        <item>米</item>
+        <item>合</item>
+        <item>市</item>
+        <item>間</item>
+        <item>方</item>
+        <item>東</item>
+        <item>回</item>
+        <item>事</item>
+        <item>対</item>
+        <item>部</item>
+        <item>相</item>
+        <item>定</item>
+        <item>発</item>
+        <item>者</item>
+        <item>業</item>
+        <item>実</item>
+        <item>決</item>
+        <item>全</item>
+        <item>表</item>
+        <item>員</item>
+        <item>調</item>
+        <item>開</item>
+        <item>化</item>
+        <item>問</item>
+        <item>代</item>
+        <item>動</item>
+        <item>期</item>
+
+        <item>議</item>
+        <item>連</item>
+        <item>民</item>
+        <item>氏</item>
+        <item>選</item>
+        <item>関</item>
+        <item>戦</item>
+        <item>最</item>
+        <item>約</item>
+        <item>法</item>
+        <item>的</item>
+        <item>要</item>
+        <item>治</item>
+        <item>成</item>
+        <item>協</item>
+        <item>機</item>
+        <item>挙</item>
+        <item>加</item>
+        <item>続</item>
+        <item>改</item>
+
+        <item>政</item>
+        <item>統</item>
+        <item>経</item>
+        <item>現</item>
+        <item>性</item>
+        <item>制</item>
+        <item>務</item>
+        <item>提</item>
+        <item>総</item>
+        <item>領</item>
+        <item>得</item>
+        <item>設</item>
+        <item>保</item>
+        <item>告</item>
+        <item>証</item>
+        <item>支</item>
+        <item>報</item>
+        <item>護</item>
+        <item>解</item>
+        <item>態</item>
+
+        <item>党</item>
+        <item>派</item>
+        <item>策</item>
+        <item>裁</item>
+        <item>権</item>
+        <item>済</item>
+        <item>視</item>
+        <item>認</item>
+        <item>株</item>
+        <item>姿</item>
+        <item>閣</item>
+        <item>衆</item>
+        <item>論</item>
+        <item>革</item>
+        <item>推</item>
+        <item>討</item>
+        <item>憲</item>
+        <item>激</item>
+        <item>疑</item>
+        <item>系</item>
+    </string-array>
+
+    <!--    Game Over Dialog Stuff-->
+    <string name="game_button_text">PLAY</string>
+    <string name="game_bestscore_text_hiragana">HIRAGANA BEST: </string>
+    <string name="game_bestscore_text_katakana">KATAKANA BEST: </string>
+    <string name="game_gameover_header">GAME OVER</string>
+    <string name="game_gameover_message">Your final score is:</string>
+    <string name="game_gameover_personalscore">Your best score is:</string>
+
+
+    <string name="lesson_japanese_internet_t0">
+        <![CDATA[
+            <h1>Emoji is Japanese?!?!?</h1>
+            <img src=\'img_topic_l0_t0.jpg\'/>
+            <p>As we all know, emojis are some sort of logographic cues that are widely used in the internet especially in texting. But did you know that the word \"emoji\" actually came from a Japanese word that means \"pictograph\"?</p>
+            <p>The word \"emoji\" is actually a combination of two Japanese words <strong>e</strong> \"絵\" meaning picture and <strong>moji</strong> \"文字\" meaning character. The word \"emotion\" and the word \"emoji\" has no other resemblance except for the first three letters of both words. This is what you would call a \"false cognate\", when a pair of words are very similar in both appearance and sound but does not share the same meaning.</p>
+        ]]>
+    </string>
+
+    <string-array name="getting_started_list">
+        <item>Japanese Writing System Basics I/Learn the basics of the Japanese writing system</item>
+        <item>Japanese Writing System Basics II/Learn the basics of the Japanese writing system</item>
+        <item>Zipanggo: Reference Sheet I/Learn how to use the reference sheet</item>
+        <item>Zipanggo: Reference Sheet II/Learn how to use the reference sheet</item>
+        <item>Zipanggo: Kanji Dictionary I/Learn how to use the kanji dictionary</item>
+        <item>Zipanggo: Kanji Dictionary II/Learn how to use the kanji dictionary</item>
+        <item>Zipanggo: Flashcards I/Learn how to use the flashcards</item>
+        <item>Zipanggo: Lessons I/Learn how to use the lessons and topics</item>
+        <item>Zipanggo: Reading Exercises I//Learn how to use the reading exercises</item>
+        <item>Zipanggo: Quizzes I/Learn how to use the quizzes</item>
+    </string-array>
+
+    <string-array name="achievement_name">
+        <item>Roma2Kana Speed Beginner,Finish a round in Roma2Kana Speed by scoring 25 points</item>
+        <item>Roma2Kana Speed Intermediate,Get a score of 50 points or higher while playing Roma2Kana Speed</item>
+        <item>Roma2Kana Speed Advanced,Get a score of 100 points or higher while playing Roma2Kana Speed</item>
+    </string-array>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lesson_rl_buttonlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/menu_lv_button_layout_rounded_bg"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:foreground="?android:selectableItemBackground">
+
+    <!--    <com.google.android.material.imageview.ShapeableImageView-->
+    <!--        android:id="@+id/lesson_rl_siv_buttonbg"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:alpha="0.3"-->
+    <!--        android:baselineAlignBottom="true"-->
+    <!--            android:clickable="false"-->
+    <!--            android:fadingEdge="vertical"-->
+    <!--            android:fadingEdgeLength="100dp"-->
+    <!--            android:focusable="false"-->
+    <!--            android:focusableInTouchMode="false"-->
+    <!--        android:scaleType="fitXY"-->
+    <!--        android:scaleX="1"-->
+    <!--        android:scaleY="1.2"-->
+    <!--        android:src="@drawable/ic_menu_button_achievement"-->
+    <!--        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent" />-->
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/lesson_rl_riv_buttonbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:alpha="0.4"
+        android:clickable="false"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="100dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/ic_menu_button_achievement"
+        app:riv_corner_radius="12dp" />
+
+    <TextView
+        android:id="@+id/lesson_rl_tv_buttontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="1"
+        android:text="@string/character_placeholder"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>

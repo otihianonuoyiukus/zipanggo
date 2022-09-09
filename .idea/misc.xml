@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/grid_stroke.xml" value="0.144" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/ic_baseline_bookmark_24.xml" value="0.2065" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/ic_baseline_bookmark_border_24.xml" value="0.2065" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/ic_baseline_draw_24.xml" value="0.2065" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/ic_baseline_grid_off_24.xml" value="0.2145" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/ic_baseline_grid_on_50.xml" value="0.1815" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/ic_baseline_help_center_24.xml" value="0.209" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/ic_menu_button_flashcard.xml" value="0.1715" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/ic_outline_backspace_24.xml" value="0.162" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/ic_outline_visibility_50.xml" value="0.1815" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/ic_outline_visibility_off_50.xml" value="0.204" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/kana_card_layout_rounded_bg.xml" value="0.2355" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/drawable/kanjidictionary_menu_kanji_button_rounded_icon_bg.xml" value="0.1775" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout-v26/activity_quiz.xml" value="0.18680555555555556" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout-v26/kana_card_front_wmnemonic_layout.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout-v26/kana_flashcard_front_layout.xml" value="0.5" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/achievement_button_lv_layout.xml" value="0.33" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/achievement_dialog_message_layout.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_achievement.xml" value="0.2868725868725869" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_flashcard.xml" value="0.24722222222222223" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_game_score.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_getting_started.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_kanji_bookmark.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_kanji_dictionary.xml" value="0.3055555555555556" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_kanji_dictionary2.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_kanji_dictionary_menu.xml" value="0.3287037037037037" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_lesson.xml" value="0.26319444444444445" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_main.xml" value="0.21316033364226136" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_menu.xml" value="0.1" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_missing_kanji.xml" value="0.31765711842667804" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_quiz.xml" value="0.22" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_quiz_report.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_reading_exercise_menu.xml" value="0.26319444444444445" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_reference_sheet.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_roma_kana_match.xml" value="0.2706209453197405" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_roma_kana_speed.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_splashscreen.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_topic.xml" value="0.26319444444444445" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/activity_topic_menu.xml" value="0.26319444444444445" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/error_dialog.xml" value="0.24375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/fragment_game_score_all.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/fragment_game_score_personal.xml" value="0.1" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/fragment_menu_statistic.xml" value="0.27361111111111114" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/fragment_menu_study.xml" value="0.1375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/game_menu_layout.xml" value="0.3136344449134656" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/game_score_lv_layout.xml" value="0.1" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/gamemeover_dialog_header_layout.xml" value="0.12916666666666668" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/gameover_dialog_message_layout.xml" value="0.1486111111111111" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/grid_cell_layout.xml" value="0.2242817423540315" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kana_card_back_wmnemonic_layout.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kana_card_drawingpractice_layout.xml" value="0.1356382978723404" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kana_card_front_lv_vocabulary_layout.xml" value="0.31765711842667804" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kana_card_front_wmnemonic_layout.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kana_card_wmnemonic_layout.xml" value="0.2632066728452271" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kana_flashcard_front_layout.xml" value="0.4742729306487696" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kanji_card_back_layout.xml" value="0.33" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kanji_card_back_vocabulary_layout.xml" value="0.31765711842667804" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kanji_card_drawingpractice_layout.xml" value="0.22053231939163498" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kanji_card_front_lv_vocabulary_layout.xml" value="0.32587719298245615" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kanji_card_front_vocabulary_layout.xml" value="0.2214621633176571" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kanji_card_front_wmnemonic_layout.xml" value="0.33" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kanji_card_wmnemonic_layout.xml" value="0.3136344449134656" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kanji_drawingpractice_layout.xml" value="0.3136344449134656" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kanjidictionary_kanji_button.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kanjidictionary_menu_kanji__lv_button_layout.xml" value="0.381025641025641" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/kanjidictionary_menu_kanji_lv_button_layout.xml" value="0.2148014440433213" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/mainmenu_menu_account_layout.xml" value="0.22361111111111112" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/menu_account_create_layout.xml" value="0.3073825503355705" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/menu_account_layout.xml" value="0.33" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/menu_account_lv_layout.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/menu_cd_header_layout.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/menu_cd_headerwic_layout.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/menu_game_cd_layout.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/menu_game_difficulty_cd_layout.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/menu_game_kana_cd_layout.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/menu_lv_button_layout.xml" value="0.25" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/menu_study_cd_header_layout.xml" value="0.25" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/menu_study_cd_layout.xml" value="0.23148148148148148" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/menu_study_kanji_cd_layout.xml" value="0.3098159509202454" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/missingkanji_menu_layout.xml" value="0.2743589743589744" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/quiz_finish_layout.xml" value="0.4375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/quiz_report_layout.xml" value="0.25" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/quizreport_button_lv_layout.xml" value="0.33" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/romakana_match_card_layout.xml" value="0.21316033364226136" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/romakana_menu_layout.xml" value="0.31765711842667804" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/splashscreen_layout.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/layout/stroke_order_grid_layout.xml" value="0.2242817423540315" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/menu/account_popup_menu.xml" value="0.24375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/menu/menu_main_menu.xml" value="0.290234375" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/xml/backup_rules.xml" value="0.2868725868725869" />
+        <entry key="..\:/Users/jyd/AndroidStudioProjects/ZipanggoTest/app/src/main/res/xml/kanji_data.xml" value="0.38697916666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

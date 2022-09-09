@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="325dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/kana_card_layout_rounded_bg">
+
+        <TextView
+            android:id="@+id/kana_card_back_tv_mnemonic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/mnemonic_header"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/kana_card_back_ib_flip"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/kana_card_back_tv_mnemonic"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_outline_card_flip"
+            android:layout_toEndOf="@id/kana_card_back_tv_mnemonic" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/kana_card_drawingpractice_md_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            app:dividerColor="@color/black"
+            app:dividerInsetEnd="10dp"
+            app:dividerInsetStart="10dp"
+            app:dividerThickness="0.5dp" />
+
+        <TextView
+            android:id="@+id/kana_card_back_tv_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kana_card_drawingpractice_md_header"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-35dp"
+            android:fontFamily="@font/noto_serif_jp_regular"
+            android:gravity="bottom|center_horizontal"
+            android:includeFontPadding="false"
+            android:text="@string/character_placeholder"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="150sp"
+            android:typeface="normal" />
+
+        <ImageView
+            android:id="@+id/kana_card_back_iv_mnemonic"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kana_card_drawingpractice_md_header"
+            android:layout_alignBottom="@id/kana_card_back_md_footer"
+            android:layout_toRightOf="@id/kana_card_back_tv_character"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/ic_stroke_order_placeholder"
+            android:layout_toEndOf="@id/kana_card_back_tv_character" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/kana_card_back_md_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kana_card_back_tv_character"
+            android:layout_marginTop="-20dp"
+            app:dividerColor="@color/black"
+            app:dividerInsetEnd="10dp"
+            app:dividerInsetStart="10dp"
+            app:dividerThickness="2dp" />
+
+        <TextView
+            android:id="@+id/kana_card_back_tv_mnemonictxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kana_card_back_md_footer"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/mnemonic_text_placeholder"
+            android:textColor="@color/black"
+            android:textSize="70sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

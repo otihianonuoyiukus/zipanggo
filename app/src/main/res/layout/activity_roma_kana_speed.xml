@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RomaKanaSpeedActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:scaleType="centerCrop"
+        android:src="@drawable/japanese_redflower_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewSwitcher
+            android:id="@+id/romakana_speed_rl_vs_viewswitcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/romakana_menu_layout" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/romakana_speed_rl_rl_romajilayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-150dp"
+                    android:background="@drawable/romakana_speed_romaji_semicircle_bg">
+
+                    <TextView
+                        android:id="@+id/romakana_speed_rl_tv_romaji"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center_horizontal"
+                        android:includeFontPadding="false"
+                        android:lines="1"
+                        android:paddingHorizontal="30dp"
+                        android:paddingTop="25dp"
+                        android:text="@string/transliteration_placeholder"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="100sp" />
+
+                    <TextView
+                        android:id="@+id/romakana_speed_rl_tv_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="155dp"
+                        android:text="@string/number_placeholder"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/romakana_speed_rl_tv_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="155dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="@string/number_placeholder"
+                        android:textColor="@color/correct_green"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/romakana_speed_rl_md_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/romakana_speed_rl_rl_romajilayout"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="15dp"
+                    app:dividerColor="@color/darker_red"
+                    app:dividerThickness="2dp" />
+
+
+                <GridView
+                    android:id="@+id/romakana_speed_rl_gv_kanagrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/romakana_speed_rl_md_divider"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="5"
+                    android:paddingHorizontal="20dp"
+                    android:paddingTop="2dp"
+                    android:verticalSpacing="-5dp"
+                    android:scrollbars="none"
+                    tools:ignore="UselessLeaf"
+                    tools:listitem="@layout/romakana_speed_card_layout" />
+
+            </RelativeLayout>
+
+        </ViewSwitcher>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/romakana_speed_rl_b_card"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/darker_red"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:paddingVertical="17dp"
+        android:text="@string/character_placeholder"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeTextType="uniform" />
+
+</RelativeLayout>

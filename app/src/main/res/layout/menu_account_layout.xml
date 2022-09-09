@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <ListView
+        android:id="@+id/menu_account_lv_accountlist"
+        android:layout_width="wrap_content"
+        android:layout_height="310dp"
+        android:dividerHeight="1dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        tools:listitem="@layout/menu_account_lv_layout" />
+
+    <TextView
+        android:id="@+id/menu_account_tv_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_account_lv_accountlist"
+        android:layout_marginTop="20dp"
+        android:text="@string/menu_account_newaccount"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

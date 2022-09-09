@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<han>
+    <kanji jlpt="5" character="一" category="Numbers">
+        <character>一</character>
+        <stroke_count>1</stroke_count>
+        <meaning>
+            <word>isa</word>
+        </meaning>
+        <meaning_en>
+            <word>one</word>
+        </meaning_en>
+        <vocabulary>
+            <word>
+                <kanji_word>一年生</kanji_word>
+                <hiragana>いちねんせい</hiragana>
+                <fil>mag-aaral sa unang antas</fil>
+            </word>
+            <word>
+                <kanji_word>一番</kanji_word>
+                <hiragana>いちばん</hiragana>
+                <fil>pinaka-; numero uno</fil>
+            </word>
+            <word>
+                <kanji_word>一度</kanji_word>
+                <hiragana>いちど</hiragana>
+                <fil>isa pang pagkakataon; minsan pa</fil>
+            </word>
+            <word>
+                <kanji_word>一杯</kanji_word>
+                <hiragana>いっぱい</hiragana>
+                <fil>marami; puno</fil>
+            </word>
+            <word>
+                <kanji_word>一緒</kanji_word>
+                <hiragana>いっしょ</hiragana>
+                <fil>kasama ang lahat; magkapareho</fil>
+            </word>
+        </vocabulary>
+        <kunyomi>
+            <reading>ひと-, ひと.つ</reading>
+        </kunyomi>
+        <onyomi>
+            <reading>イチ, イツ</reading>
+        </onyomi>
+        <radical>
+            <radical_character>一</radical_character>
+        </radical>
+        <part>
+            <part_character>一</part_character>
+        </part>
+        <variant>
+            <variant_character>弌</variant_character>
+        </variant>
+        <mnemonic_img>u4e00_mnemonic</mnemonic_img>
+        <mnemonic_txt>isang daliri</mnemonic_txt>
+        <stroke_img>
+            <img>u4e001</img>
+            <img>u4e002</img>
+        </stroke_img>
+    </kanji>
+
+    <kanji jlpt="5" character="五" category="Numbers">
+        <character>五</character>
+        <stroke_count>5</stroke_count>
+        <meaning>
+            <word>lima</word>
+        </meaning>
+        <meaning_en>
+            <word>five</word>
+        </meaning_en>
+        <vocabulary>
+            <word>
+                <kanji_word>五つ</kanji_word>
+                <hiragana>いつ</hiragana>
+                <fil>lima; limang taong gulang</fil>
+            </word>
+            <word>
+                <kanji_word>五十音</kanji_word>
+                <hiragana>ごじゅうおん</hiragana>
+                <fil>ang mga pantig ng Hapon</fil>
+            </word>
+            <word>
+                <kanji_word>五輪</kanji_word>
+                <hiragana>ごりん</hiragana>
+                <fil>palarong olimpiko; olimpiko</fil>
+            </word>
+            <word>
+                <kanji_word>五十肩</kanji_word>
+                <hiragana>ごじゅうかた</hiragana>
+                <fil>matigas na balikat</fil>
+            </word>
+            <word>
+                <kanji_word>五分</kanji_word>
+                <hiragana>ごふん</hiragana>
+                <fil>limang minuto</fil>
+            </word>
+        </vocabulary>
+        <kunyomi>
+            <reading>いつ, いつ.つ</reading>
+        </kunyomi>
+        <onyomi>
+            <reading>ゴ</reading>
+        </onyomi>
+        <radical>
+            <radical_character>二</radical_character>
+        </radical>
+        <part>
+            <part_character>五</part_character>
+        </part>
+        <variant>
+            <variant_character></variant_character>
+        </variant>
+        <mnemonic_img>u4e94_mnemonic</mnemonic_img>
+        <mnemonic_txt></mnemonic_txt>
+        <stroke_img>
+            <img>u4e941</img>
+            <img>u4e942</img>
+            <img>u4e943</img>
+            <img>u4e944</img>
+            <img>u4e945</img>
+            <img>u4e946</img>
+        </stroke_img>
+    </kanji>
+</han>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+
+    <objectAnimator
+        android:duration="400"
+        android:propertyName="textColor"
+        android:valueFrom="@color/black"
+        android:valueTo="@color/wrong_red"/>
+
+    <objectAnimator
+        android:duration="400"
+        android:propertyName="textColor"
+        android:valueFrom="@color/wrong_red"
+        android:valueTo="@color/black"/>
+</set>

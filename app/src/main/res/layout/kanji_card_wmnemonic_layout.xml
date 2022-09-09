@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="325dp">
+
+    <RelativeLayout
+        android:id="@+id/kanji_card_back"
+        android:layout_width="600dp"
+        android:layout_height="325dp"
+        android:layout_centerInParent="true">
+
+        <include layout="@layout/kanji_card_back_layout"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kanji_card_front"
+        android:layout_width="600dp"
+        android:layout_height="325dp"
+        android:layout_centerInParent="true">
+
+        <include layout="@layout/kanji_card_front_wmnemonic_layout"/>
+    </RelativeLayout>
+
+</RelativeLayout>

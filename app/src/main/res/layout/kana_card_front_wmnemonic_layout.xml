@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="325dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/kana_card_layout_rounded_bg">
+
+        <TextView
+            android:id="@+id/kana_card_front_tv_stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/stroke_count"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/kana_card_front_tv_stroke_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/kana_card_front_tv_stroke"
+            android:layout_alignBottom="@+id/kana_card_front_tv_stroke"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@id/kana_card_front_tv_stroke"
+            android:layout_toRightOf="@id/kana_card_front_tv_stroke"
+            android:text="@string/stroke_count_placeholder"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/kana_card_front_ib_draw"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/kana_card_front_tv_stroke_count"
+            android:layout_toLeftOf="@+id/kana_card_front_ib_listen"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_draw_24"
+            android:layout_toStartOf="@+id/kana_card_front_ib_listen"
+            android:layout_marginEnd="10dp" />
+
+        <ImageButton
+            android:id="@+id/kana_card_front_ib_listen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/kana_card_front_tv_stroke_count"
+            android:layout_toLeftOf="@+id/kana_card_front_ib_flip"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_outline_kana_listen" />
+
+        <ImageButton
+            android:id="@+id/kana_card_front_ib_flip"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/kana_card_front_tv_stroke_count"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_outline_card_flip" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/kana_card_front_md_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            app:dividerColor="@color/black"
+            app:dividerInsetEnd="10dp"
+            app:dividerInsetStart="10dp"
+            app:dividerThickness="0.5dp" />
+
+        <TextView
+            android:id="@+id/kana_card_front_tv_character"
+            android:layout_width="150dp"
+            android:layout_height="165dp"
+            android:layout_below="@id/kana_card_front_md_header"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/noto_serif_jp_regular"
+            android:gravity="center_vertical|center_horizontal"
+            android:includeFontPadding="false"
+            android:lines="1"
+            android:text="@string/character_placeholder"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="150sp"
+            android:typeface="normal"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/kana_card_front_tv_transliteration"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/kana_card_front_tv_character"
+            android:layout_alignBottom="@+id/kana_card_front_tv_character"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toEndOf="@id/kana_card_front_tv_character"
+            android:layout_toRightOf="@id/kana_card_front_tv_character"
+            android:fontFamily="@font/noto_serif_jp_regular"
+            android:gravity="center_vertical|center_horizontal"
+            android:includeFontPadding="false"
+            android:lines="1"
+            android:paddingBottom="7dp"
+            android:text="@string/transliteration_placeholder"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="150sp"
+            android:typeface="normal"
+            app:autoSizeTextType="uniform" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/kana_card_front_md_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kana_card_front_tv_character"
+            app:dividerColor="@color/black"
+            app:dividerInsetEnd="10dp"
+            app:dividerInsetStart="10dp"
+            app:dividerThickness="2dp" />
+
+        <ListView
+            android:id="@+id/kana_card_front_lv_vocabulary"
+            android:layout_width="match_parent"
+            android:layout_height="161dp"
+            android:layout_below="@id/kana_card_front_md_footer"
+            android:layout_marginTop="5dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5dp"
+            android:fadeScrollbars="false"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="6dp"
+            tools:listitem="@layout/kana_card_front_lv_vocabulary_layout" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/kana_card_front_md_vocabulary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kana_card_front_lv_vocabulary"
+            android:layout_marginTop="5dp"
+            app:dividerColor="@color/black"
+            app:dividerInsetEnd="10dp"
+            app:dividerInsetStart="10dp"
+            app:dividerThickness="2dp" />
+
+        <GridView
+            android:id="@+id/kana_card_front_gv_stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kana_card_front_md_vocabulary"
+            android:numColumns="6"
+            android:paddingLeft="15dp"
+            android:paddingTop="7dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:verticalSpacing="9dp"
+            tools:listitem="@layout/stroke_order_grid_layout" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="325dp"
+    android:layout_height="500dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/kana_card_layout_rounded_bg">
+
+    <ImageButton
+        android:id="@+id/kana_flashcard_front_ib_flip"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_outline_card_flip" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/kana_flashcard_front_md_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        app:dividerColor="@color/black"
+        app:dividerInsetEnd="10dp"
+        app:dividerInsetStart="10dp"
+        app:dividerThickness="0.5dp" />
+
+    <TextView
+        android:id="@+id/kana_flashcard_front_tv_character"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kana_flashcard_front_md_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lines="1"
+        android:text="@string/character_placeholder"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="250sp"
+        app:autoSizeMaxTextSize="250sp"
+        app:autoSizeMinTextSize="50sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/kana_flashcard_front_md_character"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kana_flashcard_front_tv_character"
+        android:layout_marginTop="15dp"
+        app:dividerColor="@color/black"
+        app:dividerInsetEnd="10dp"
+        app:dividerInsetStart="10dp"
+        app:dividerThickness="2dp" />
+
+    <GridView
+        android:id="@+id/kana_flashcard_front_gv_stroke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kana_flashcard_front_md_character"
+        android:numColumns="6"
+        android:paddingLeft="15dp"
+        android:paddingTop="6dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="7dp"
+        android:verticalSpacing="6dp"
+        tools:listitem="@layout/stroke_order_grid_layout" />
+</RelativeLayout>

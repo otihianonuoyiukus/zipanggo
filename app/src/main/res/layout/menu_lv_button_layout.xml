@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_lv_button_layout_rounded_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:clickable="false">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_centerVertical="true"
+        android:alpha="0.3"
+        android:baselineAlignBottom="true"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="100dp"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        android:scaleY="1.2"
+        android:src="@drawable/japanese_fuji_bg"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/menu_iv_buttonIcon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/menu_tv_buttonHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/menu_iv_buttonIcon"
+        android:layout_toRightOf="@id/menu_iv_buttonIcon"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="10"
+        android:text="Pilyegong Pansanggunian"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <TextView
+        android:id="@+id/menu_tv_buttonDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_tv_buttonHeader"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/menu_iv_buttonIcon"
+        android:layout_toRightOf="@id/menu_iv_buttonIcon"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="5dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="10"
+        android:text="@string/lorem_ipsum_placeholder"
+        android:textColor="#EAEAEA"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:paddingStart="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+</RelativeLayout>

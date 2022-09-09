@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="600dp"
+    android:layout_height="325dp"
+    android:background="@drawable/kana_card_layout_rounded_bg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/kanji_card_back_rl_toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/kanji_card_back_tv_jlptlevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/menu_study_cd_choice_level_kanji_n5"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageButton
+            android:id="@+id/kanji_card_back_rl_ib_flip"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_outline_card_flip" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/kanji_card_back_md_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kanji_card_back_rl_toplayout"
+        android:layout_marginTop="5dp"
+        app:dividerColor="@color/black"
+        app:dividerInsetEnd="10dp"
+        app:dividerInsetStart="10dp"
+        app:dividerThickness="1dp" />
+
+    <LinearLayout
+        android:id="@+id/kanji_card_back_rl_bodylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kanji_card_back_md_header"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/kanji_card_back_tv_kunyomilabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kanji_card_back_kunyomi"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kanji_card_back_tv_kunyomi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/kanji_card_back_tv_kunyomilabel"
+                android:text="@string/kanji_card_back_kunyomi"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kanji_card_back_tv_onyomilabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kanji_card_back_tv_kunyomi"
+                android:text="@string/kanji_card_back_onyomi"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kanji_card_back_tv_onyomi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kanji_card_back_tv_kunyomi"
+                android:layout_toRightOf="@id/kanji_card_back_tv_onyomilabel"
+                android:text="@string/kanji_card_back_onyomi"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kanji_card_back_tv_meaninglabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kanji_card_back_tv_onyomi"
+                android:lines="1"
+                android:text="@string/kanji_card_back_meaning"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kanji_card_back_tv_meaning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kanji_card_back_tv_onyomi"
+                android:layout_toRightOf="@id/kanji_card_back_tv_meaninglabel"
+                android:lines="2"
+                android:text="@string/kanji_card_back_meaning"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/kanji_card_back_tv_radicallabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kanji_card_back_radical"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kanji_card_back_tv_radical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/kanji_card_back_tv_radicallabel"
+                android:text="@string/kanji_card_back_radical"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kanji_card_back_tv_partlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kanji_card_back_tv_radical"
+                android:text="@string/kanji_card_back_part"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kanji_card_back_tv_part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kanji_card_back_tv_radical"
+                android:layout_toRightOf="@id/kanji_card_back_tv_partlabel"
+                android:text="@string/kanji_card_back_part"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kanji_card_back_tv_variantlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kanji_card_back_tv_part"
+                android:text="@string/kanji_card_back_variant"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/kanji_card_back_tv_variant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kanji_card_back_tv_part"
+                android:layout_toRightOf="@id/kanji_card_back_tv_variantlabel"
+                android:text="@string/kanji_card_back_variant"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/kanji_card_back_md_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kanji_card_back_rl_bodylayout"
+        android:layout_marginTop="5dp"
+        app:dividerColor="@color/black"
+        app:dividerInsetEnd="10dp"
+        app:dividerInsetStart="10dp"
+        app:dividerThickness="1dp" />
+
+    <ListView
+        android:id="@+id/kanji_card_back_lv_vocabularylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/kanji_card_back_md_footer"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        tools:listitem="@layout/kanji_card_back_vocabulary_layout" />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/achievement_button_rl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/menu_lv_button_layout_rounded_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:clickable="false"
+    android:layout_marginBottom="10dp" >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_centerVertical="true"
+        android:alpha="0.3"
+        android:baselineAlignBottom="true"
+        android:clickable="false"
+        android:fadingEdge="vertical"
+        android:fadingEdgeLength="100dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        android:scaleY="1.2"
+        android:src="@drawable/japanese_fuji_bg"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/achievement_button_siv_icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent" />
+
+    <TextView
+        android:id="@+id/achievement_button_tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/achievement_button_siv_icon"
+        android:layout_toRightOf="@id/achievement_button_siv_icon"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="10"
+        android:text="Pilyegong Pansanggunian"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/achievement_button_tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/achievement_button_tv_header"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@id/achievement_button_siv_icon"
+        android:layout_toRightOf="@id/achievement_button_siv_icon"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="10"
+        android:text="@string/lorem_ipsum_placeholder"
+        android:textColor="#EAEAEA"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

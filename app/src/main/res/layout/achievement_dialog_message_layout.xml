@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        app:dividerColor="@color/darker_red"
+        app:dividerThickness="1dp" />
+
+    <TextView
+        android:id="@+id/achievement_dialog_rl_tv_messageheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="CONGRATULATIONS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!--    <com.google.android.material.imageview.ShapeableImageView-->
+    <!--        android:layout_width="170dp"-->
+    <!--        android:layout_height="170dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="-20dp"-->
+    <!--        android:layout_below="@id/gameover_dialog_rl_tv_messagebody"-->
+    <!--        android:background="@drawable/ic_game_gameover_dialog_medal"-->
+    <!--        />-->
+
+    <TextView
+        android:id="@+id/achievement_dialog_rl_tv_messagebody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/achievement_dialog_rl_tv_messageheader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="You unlocked an achievement!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/achievement_dialog_rl_iv_trophyicon"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_below="@id/achievement_dialog_rl_tv_messagebody"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="5"
+        android:src="@drawable/ic_achievement_unlocked" />
+
+
+    <TextView
+        android:id="@+id/achievement_dialog_ll_tv_achievementname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/achievement_dialog_rl_iv_trophyicon"
+        android:layout_centerHorizontal="true"
+        android:text="@string/lorem_ipsum_placeholder"
+        android:textColor="@color/darker_red"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/achievement_dialog_ll_tv_achievementname"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        app:dividerColor="@color/darker_red"
+        app:dividerThickness="1dp" />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RomaKanaMatchActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:scaleType="centerCrop"
+        android:src="@drawable/japanese_redflower_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewSwitcher
+            android:id="@+id/romakana_match_rl_vs_viewswitcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/romakana_menu_layout" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/romakana_match_rl_rl_scorelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-150dp"
+                    android:background="@drawable/romakana_speed_romaji_semicircle_bg">
+
+                    <TextView
+                        android:id="@+id/romakana_match_rl_tv_score"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        android:includeFontPadding="false"
+                        android:lines="1"
+                        android:paddingHorizontal="30dp"
+                        android:paddingTop="25dp"
+                        android:text="@string/number_placeholder"
+                        android:textAlignment="center"
+                        android:textColor="@color/correct_green"
+                        android:textSize="100sp" />
+
+                    <TextView
+                        android:id="@+id/romakana_match_rl_tv_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="155dp"
+                        android:text="@string/number_placeholder"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/romakana_match_rl_md_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/romakana_match_rl_rl_scorelayout"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="15dp"
+                    app:dividerColor="@color/darker_red"
+                    app:dividerThickness="2dp" />
+
+                <GridView
+                    android:id="@+id/romakana_match_rl_gv_kanagrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/romakana_match_rl_md_divider"
+                    android:layout_marginTop="2dp"
+                    android:verticalSpacing="-5dp"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="4"
+                    android:paddingHorizontal="20dp"
+                    android:paddingTop="2dp"
+                    android:scrollbars="none"
+                    tools:ignore="UselessLeaf"
+                    tools:listitem="@layout/romakana_match_card_layout"
+                    android:splitMotionEvents="false" />
+
+            </RelativeLayout>
+
+        </ViewSwitcher>
+
+    </RelativeLayout>
+
+</RelativeLayout>

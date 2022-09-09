@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/kana_card_back"
+        android:layout_width="325dp"
+        android:layout_height="565dp"
+        android:layout_centerInParent="true">
+
+        <include layout="@layout/kana_card_back_wmnemonic_layout"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kana_card_front"
+        android:layout_width="325dp"
+        android:layout_height="565dp"
+        android:layout_centerInParent="true">
+
+        <include layout="@layout/kana_card_front_wmnemonic_layout"/>
+    </RelativeLayout>
+
+</RelativeLayout>

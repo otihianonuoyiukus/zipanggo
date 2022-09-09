@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:id="@+id/menu_game_cd_rl_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RadioGroup
+            android:id="@+id/menu_game_cd_rg_gamegroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/menu_game_cd_rb_speed">
+
+            <RadioButton
+                android:id="@+id/menu_game_cd_rb_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darker_red"
+                android:text="@string/menu_game_button_romakanaspeed_header" />
+
+            <RadioButton
+                android:id="@+id/menu_game_cd_rb_match"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darker_red"
+                android:text="@string/menu_game_button_romakanamatch_header" />
+
+            <RadioButton
+                android:id="@+id/menu_game_cd_rb_missing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darker_red"
+                android:text="@string/menu_game_button_missingkanji_header" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</LinearLayout>

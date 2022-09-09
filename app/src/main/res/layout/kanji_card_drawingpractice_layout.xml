@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="600dp"
+    android:layout_height="325dp"
+    android:background="@drawable/kana_card_layout_rounded_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="13dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <com.example.zipanggotest.PaintView
+            android:id="@+id/kanji_card_drawingpractice_pv_canvas"
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/grid_stroke"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/kanji_card_drawingpractice_iv_grid"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/kanji_drawingpractice_gridcross_img"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/kanji_card_drawingpractice_tv_character"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:fontFamily="@font/kleeone_regular"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:text="@string/kanji_button_kanji_placeholder"
+            android:textSize="200sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/grid_stroke"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/kanji_card_drawingpractice_ib_clear"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_outline_backspace_50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/kanji_card_drawingpractice_ib_visiblity"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_outline_visibility_off_50" />
+
+            <ImageButton
+                android:id="@+id/kanji_card_drawingpractice_ib_grid"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_baseline_grid_off_50" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/kanji_card_drawingpractice_gv_stroke"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:numColumns="4"
+        android:verticalSpacing="11dp"
+        tools:listitem="@layout/stroke_order_grid_layout" />
+
+</LinearLayout>

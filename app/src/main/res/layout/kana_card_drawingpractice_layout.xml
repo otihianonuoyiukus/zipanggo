@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="325dp"
+        android:layout_height="550dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/kana_card_layout_rounded_bg">
+
+        <TextView
+            android:id="@+id/kana_card_drawingpractice_tv_mnemonic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/drawing_practice_header"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/kana_card_drawingpractice_md_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            app:dividerColor="@color/black"
+            app:dividerInsetEnd="10dp"
+            app:dividerInsetStart="10dp"
+            app:dividerThickness="0.5dp" />
+
+        <RelativeLayout
+            android:id="@+id/kana_card_drawingpractice_rl_canvaslayout"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/kana_card_drawingpractice_md_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <com.example.zipanggotest.PaintView
+                android:id="@+id/kana_card_drawingpractice_pv_canvas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/grid_stroke"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/kana_card_drawingpractice_iv_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/kanji_drawingpractice_gridcross_img"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/kana_card_drawingpractice_tv_character"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:focusable="false"
+                android:fontFamily="@font/kleeone_regular"
+                android:gravity="center"
+                android:includeFontPadding="true"
+                android:text="@string/character_placeholder"
+                android:textSize="250sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/kana_card_drawingpractice_ll_btnlayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/kana_card_drawingpractice_rl_canvaslayout"
+            android:layout_marginHorizontal="13dp"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/grid_stroke"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/kana_card_drawingpractice_ib_visiblity"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_outline_visibility_off_50" />
+
+                <ImageButton
+                    android:id="@+id/kana_card_drawingpractice_ib_grid"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_baseline_grid_off_50" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|end">
+
+                <ImageButton
+                    android:id="@+id/kana_card_drawingpractice_ib_clear"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_outline_backspace_50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/kana_card_drawingpractice_gv_stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kana_card_drawingpractice_ll_btnlayout"
+            android:numColumns="6"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:verticalSpacing="9dp"
+            tools:listitem="@layout/stroke_order_grid_layout" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

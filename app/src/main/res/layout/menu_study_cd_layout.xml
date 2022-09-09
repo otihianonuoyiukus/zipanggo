@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/menu_study_ll_rl_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RadioGroup
+            android:id="@+id/menu_study_rl_rg_systemgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/menu_study_cd_rb_hiragana">
+
+            <RadioButton
+                android:id="@+id/menu_study_cd_rb_hiragana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darker_red"
+                android:text="@string/menu_study_cd_choice_system_hiragana" />
+
+            <RadioButton
+                android:id="@+id/menu_study_cd_rb_katakana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darker_red"
+                android:text="@string/menu_study_cd_choice_system_katakana" />
+
+<!--            <RadioButton-->
+<!--                android:id="@+id/menu_study_cd_rb_kanji"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:buttonTint="@color/darker_red"-->
+<!--                android:text="@string/menu_study_cd_choice_system_kanji" />-->
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_study_ll_rl_soundtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ViewSwitcher
+            android:id="@+id/menu_study_rl_vs_soundtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:id="@+id/menu_study_cd_rl_kanachoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/menu_study_cd_cb_basic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/darker_red"
+                    android:text="@string/menu_study_cd_choice_sound_basic"
+                    android:checked="true"/>
+
+                <CheckBox
+                    android:id="@+id/menu_study_cd_cb_dakuon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/menu_study_cd_cb_basic"
+                    android:buttonTint="@color/darker_red"
+                    android:text="@string/menu_study_cd_choice_sound_voiced_dakuon" />
+
+                <CheckBox
+                    android:id="@+id/menu_study_cd_cb_handakuon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/menu_study_cd_cb_dakuon"
+                    android:buttonTint="@color/darker_red"
+                    android:text="@string/menu_study_cd_choice_sound_voiced_handakuon" />
+
+                <CheckBox
+                    android:id="@+id/menu_study_cd_cb_combo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/menu_study_cd_cb_handakuon"
+                    android:buttonTint="@color/darker_red"
+                    android:text="@string/menu_study_cd_choice_sound_combo" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_study_cd_rl_kanjichoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+<!--                <CheckBox-->
+<!--                    android:id="@+id/menu_study_cd_cb_n5"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:buttonTint="@color/darker_red"-->
+<!--                    android:text="@string/menu_study_cd_choice_level_kanji_n5" />-->
+
+<!--                <CheckBox-->
+<!--                    android:id="@+id/menu_study_cd_cb_n4"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/menu_study_cd_cb_n5"-->
+<!--                    android:buttonTint="@color/darker_red"-->
+<!--                    android:text="@string/menu_study_cd_choice_level_kanji_n4" />-->
+
+<!--                <CheckBox-->
+<!--                    android:id="@+id/menu_study_cd_cb_n3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/menu_study_cd_cb_n4"-->
+<!--                    android:buttonTint="@color/darker_red"-->
+<!--                    android:text="@string/menu_study_cd_choice_level_kanji_n3" />-->
+
+<!--                <CheckBox-->
+<!--                    android:id="@+id/menu_study_cd_cb_n2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/menu_study_cd_cb_n3"-->
+<!--                    android:buttonTint="@color/darker_red"-->
+<!--                    android:text="@string/menu_study_cd_choice_level_kanji_n2" />-->
+
+<!--                <CheckBox-->
+<!--                    android:id="@+id/menu_study_cd_cb_n1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/menu_study_cd_cb_n2"-->
+<!--                    android:buttonTint="@color/darker_red"-->
+<!--                    android:text="@string/menu_study_cd_choice_level_kanji_n1" />-->
+
+            </RelativeLayout>
+
+        </ViewSwitcher>
+
+    </RelativeLayout>
+
+</LinearLayout>

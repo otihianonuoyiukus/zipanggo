@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridLayout"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/grid_cell_rl_mb_characterbutton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/red"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:id="@+id/grid_cell_rl_tv_charactertext"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:autoSizeMaxTextSize="50sp"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:clickable="false"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/character_placeholder"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/grid_cell_rl_tv_transliteration"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/grid_cell_rl_mb_characterbutton"
+        android:autoSizeMaxTextSize="50sp"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:textAlignment="center"
+        tools:text="@string/transliteration_placeholder" />
+</RelativeLayout>

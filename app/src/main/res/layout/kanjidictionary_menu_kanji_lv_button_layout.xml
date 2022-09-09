@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/kanjidictionary_menu_kanji_rl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/menu_lv_button_layout_rounded_bg"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="true">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/kanjidictionary_menu_kanji_rl_riv_charlayout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/kanjidictionary_menu_kanji_button_rounded_icon_bg">
+
+        <TextView
+            android:id="@+id/kanjidictionary_menu_kanji_rl_tv_stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="33dp"
+            android:text="@string/number_placeholder"
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/kanjidictionary_menu_kanji_rl_tv_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:includeFontPadding="false"
+            android:text="@string/kanji_button_kanji_placeholder"
+            android:textSize="70sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/kanjidictionary_menu_kanji_rl_riv_meaning"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/kanjidictionary_menu_kanji_rl_riv_charlayout"
+        android:layout_toRightOf="@+id/kanjidictionary_menu_kanji_rl_riv_charlayout"
+        android:lines="2"
+        android:text="@string/kanji_button_meaning_placeholder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/kanjidictionary_menu_kanji_rl_riv_onyomi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/kanjidictionary_menu_kanji_rl_riv_charlayout"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/kanjidictionary_menu_kanji_rl_riv_charlayout"
+        android:layout_toRightOf="@id/kanjidictionary_menu_kanji_rl_riv_charlayout"
+        android:text="@string/kanji_button_onyomi_placeholder"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/kanjidictionary_menu_kanji_rl_riv_kunyomi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/kanjidictionary_menu_kanji_rl_riv_onyomi"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/kanjidictionary_menu_kanji_rl_riv_charlayout"
+        android:layout_toRightOf="@id/kanjidictionary_menu_kanji_rl_riv_charlayout"
+        android:text="@string/kanji_button_kunyomi_placeholder"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

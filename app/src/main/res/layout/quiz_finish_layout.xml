@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/quiz_finish_rl_scorelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <!--        <com.google.android.material.divider.MaterialDivider-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginHorizontal="10dp"-->
+        <!--            android:layout_marginTop="5dp"-->
+        <!--            app:dividerColor="@color/darker_red"-->
+        <!--            app:dividerThickness="1dp" />-->
+
+        <RelativeLayout
+            android:layout_marginVertical="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@+id/quiz_finish_rl_correct"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:background="@drawable/quiz_card_layout_rounded_bg">
+
+                <RelativeLayout
+                    android:id="@+id/quiz_finish_rl_correct_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/quiz_finish_score_toprounded_bg">
+
+                    <TextView
+                        android:id="@+id/quiz_finish_tv_correct_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="CORRECT"
+                        android:textColor="@color/lighter_dirty_white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/quiz_finish_tv_correct_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/quiz_finish_rl_correct_header"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="40"
+                    android:textColor="@color/dark_correct_green"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quiz_finish_rl_wrong"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toEndOf="@id/quiz_finish_rl_correct"
+                android:layout_toRightOf="@id/quiz_finish_rl_correct"
+                android:background="@drawable/quiz_card_layout_rounded_bg">
+
+                <RelativeLayout
+                    android:id="@+id/quiz_finish_rl_wrong_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/quiz_finish_score_toprounded_bg">
+
+                    <TextView
+                        android:id="@+id/quiz_finish_tv_wrong_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="WRONG"
+                        android:textColor="@color/lighter_dirty_white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/quiz_finish_tv_wrong_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/quiz_finish_rl_wrong_header"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="40"
+                    android:textColor="@color/dark_wrong_red"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/quiz_finish_rl_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toEndOf="@id/quiz_finish_rl_wrong"
+                android:layout_toRightOf="@id/quiz_finish_rl_wrong"
+                android:background="@drawable/quiz_card_layout_rounded_bg">
+
+                <RelativeLayout
+                    android:id="@+id/quiz_finish_rl_percent_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/quiz_finish_score_toprounded_bg">
+
+                    <TextView
+                        android:id="@+id/quiz_finish_tv_percent_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="5dp"
+                        android:text="PERCENT"
+                        android:textColor="@color/lighter_dirty_white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/quiz_finish_tv_percent_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/quiz_finish_rl_percent_header"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="100%"
+                    android:textColor="@color/dark_percent_grey"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/quiz_finish_tv_wronglist_label"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quiz_finish_rl_wrong"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="The character/s you've gotten wrong are:"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quiz_finish_tv_wronglist"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quiz_finish_tv_wronglist_label"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="aaaaaaaaaaaaaaa"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

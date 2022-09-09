@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MissingKanjiActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:scaleType="centerCrop"
+        android:src="@drawable/japanese_redflower_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewSwitcher
+            android:id="@+id/missingkanji_vs_viewswitcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/missingkanji_menu_layout" />
+
+            <RelativeLayout
+                android:id="@+id/missingkanji_rl_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/missingkanji_rl_numberslayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/missingkanji_tv_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/number_placeholder"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/missingkanji_tv_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/number_placeholder"
+                        android:textColor="@color/correct_green"
+                        android:textSize="32sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/missingkanji_ll_questionlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/missingkanji_rl_numberslayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/missingkanji_tv_kanjifurigana"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hiragana_word_placeholder"
+                        android:textSize="36sp" />
+
+                    <TextView
+                        android:id="@+id/missingkanji_tv_kanjiword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/kleeone_regular"
+                        android:gravity="center"
+                        android:text="@string/kanji_word_placeholder"
+                        android:textColor="@color/black"
+                        android:textSize="100sp" />
+
+                    <TextView
+                        android:id="@+id/missingkanji_tv_kanjimeaning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/kanji_meaning_placeholder"
+                        android:textSize="24sp" />
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:dividerColor="@color/darker_red"
+                        app:dividerThickness="2dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/missingkanji_ll_questionlayout"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/missingkanji_mb_kanjibtn0"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/kana_card_layout_rounded_bg"
+                            android:fontFamily="@font/kleeone_regular"
+                            android:insetLeft="0dp"
+                            android:insetTop="0dp"
+                            android:insetRight="0dp"
+                            android:insetBottom="0dp"
+                            android:text="@string/kanji_button_kanji_placeholder"
+                            android:textSize="90sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/missingkanji_mb_kanjibtn1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/kana_card_layout_rounded_bg"
+                            android:fontFamily="@font/kleeone_regular"
+                            android:insetLeft="0dp"
+                            android:insetTop="0dp"
+                            android:insetRight="0dp"
+                            android:insetBottom="0dp"
+                            android:text="@string/kanji_button_kanji_placeholder"
+                            android:textSize="90sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/missingkanji_mb_kanjibtn2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/kana_card_layout_rounded_bg"
+                            android:fontFamily="@font/kleeone_regular"
+                            android:insetLeft="0dp"
+                            android:insetTop="0dp"
+                            android:insetRight="0dp"
+                            android:insetBottom="0dp"
+                            android:text="@string/kanji_button_kanji_placeholder"
+                            android:textSize="90sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/missingkanji_mb_kanjibtn3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/kana_card_layout_rounded_bg"
+                            android:fontFamily="@font/kleeone_regular"
+                            android:insetLeft="0dp"
+                            android:insetTop="0dp"
+                            android:insetRight="0dp"
+                            android:insetBottom="0dp"
+                            android:text="@string/kanji_button_kanji_placeholder"
+                            android:textSize="90sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/missingkanji_mb_kanjibtn4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/kana_card_layout_rounded_bg"
+                            android:fontFamily="@font/kleeone_regular"
+                            android:insetLeft="0dp"
+                            android:insetTop="0dp"
+                            android:insetRight="0dp"
+                            android:insetBottom="0dp"
+                            android:text="@string/kanji_button_kanji_placeholder"
+                            android:textSize="90sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/missingkanji_mb_kanjibtn5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/kana_card_layout_rounded_bg"
+                            android:fontFamily="@font/kleeone_regular"
+                            android:insetLeft="0dp"
+                            android:insetTop="0dp"
+                            android:insetRight="0dp"
+                            android:insetBottom="0dp"
+                            android:text="@string/kanji_button_kanji_placeholder"
+                            android:textSize="90sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ViewSwitcher>
+
+    </RelativeLayout>
+
+</RelativeLayout>
